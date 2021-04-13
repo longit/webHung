@@ -1,0 +1,116 @@
+/*---------- header css ----------*/
+.b-header{
+  position: relative; 
+  background: $color-bg;
+  border-bottom: 3px solid #c9aa54;
+  .navbar-brand { 
+    img {
+      width: 100px;
+    }
+  }
+  .b-header__menu-navbar {
+    ul {
+      li { 
+        a.nav-link {
+          text-transform: uppercase;
+          color: $color-white;  
+          padding-right: 1rem;
+          padding-left: 1rem;
+          border: 1px solid transparent;
+        }
+        &.active,
+        &:hover {
+          a.nav-link {
+            color: #d6a937;
+          }
+        }
+      }
+    }
+  }
+  .b-header__menu{
+    .navbar-light .navbar-toggler {
+        color: #fff;
+        border-color: #fff;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("../images/i-menu.png");
+        background-size: 30px;
+    }
+  }
+}  
+.b-hotline {
+    display: inherit;
+    margin-left: 15px;
+    i{
+      color: $color-orange;
+      margin: 5px 5px 0 0;
+      font-size: 18px;
+    }
+    a{
+      font-family: "Roboto-Bold";
+      color: $color-orange;
+      font-size: 18px;
+      display: flex;
+    }
+}
+//header responsive css
+@media (max-width: $screen-xxs-max){ 
+  .b-header {
+    .navbar {
+      padding: .5rem 0;
+    }
+    .navbar-brand {
+      img {
+        width: 85px;
+      }
+    }
+  }
+  .b-header .b-header__menu-navbar {
+    padding-top: 15px;
+}
+}
+@media (min-width: $screen-xs-min){
+  .b-header {
+    .navbar-brand {
+      img {
+        width: 85px;
+      }
+    }
+  }
+}
+@media (min-width: $screen-sm-min){
+
+}
+@media (min-width: $screen-md-min){
+  .b-header {
+    .navbar {
+      padding: .5rem 0;
+    }
+    .navbar-brand {
+      img {
+        width: 85px;
+      }
+    }
+  }
+  .b-header .b-header__menu-navbar ul li a.nav-link {
+    font-size: 12px;
+  }
+}
+@media (min-width: $screen-lg-min){
+  .b-header {
+    .navbar {
+      padding: 0;
+    }
+    .navbar-brand {
+      img {
+        width: 100px;
+      }
+    }
+  }
+  .b-header .b-header__menu-navbar ul li a.nav-link {
+    font-size: 14px;
+    padding: 30px 15px;
+  }
+}
+//header responsive css
+/*---------- end header css ----------*/
