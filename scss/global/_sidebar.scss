@@ -1,5 +1,96 @@
 /*---------- sidebar css ----------*/
-
+.b__siderbar--left {
+    flex-basis: 15%;
+    max-width: 15%;
+    
+    .b__left--ls {
+        display: flex;
+    }
+}
+.b__siderbar__ls { 
+    background-color: $color-white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+h3.b__title{
+    font-size: 20px;
+    margin: 0;
+    color: $color-white;
+    background: $color-bg2;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+.b__siderbar__ls {
+    ul {
+        padding: 15px;
+        margin: 0;
+        li {
+            list-style: none;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+.b__siderbar--right {
+    flex-basis: 20%;
+    max-width: 20%;
+    .b__right--ls {
+        ul {
+            padding: 0;
+            margin: 0; 
+        }
+        .b__right--top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            p {
+                margin-bottom: 0;
+            }
+            .b__avatar--right {
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                border: 1px solid #ddd;
+                margin-right: 10px;
+                img {
+                    max-width: 100%;
+                    border-radius: 100%;
+                }
+            }
+        }
+        .b__right--bottom {
+            display: flex;
+            .b__images-sm {
+                margin-right: 10px;
+                border-radius: 5px;
+                img {
+                    max-width: 100%;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+            }
+            .b__desc--siderbarRight {
+                p {
+                    margin-bottom: 0;
+                }
+                h3 {
+                    margin-bottom: 0;
+                    line-height: normal;
+                    display: flex;
+                    a {
+                        font-size: 14px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
 //sidebar responsive css
 @media (min-width: $screen-xs-min){
 
