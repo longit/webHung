@@ -1,10 +1,36 @@
 /*---------- sidebar css ----------*/
 .b__siderbar--left {
-    flex-basis: 15%;
-    max-width: 15%;
-    
+    flex-basis: 20%;
+    max-width: 20%; 
+    ul {
+        max-height: 430px;
+        overflow-x: auto;
+        /* width */
+        &::-webkit-scrollbar {
+            width: 5px;
+            border-radius: 20px;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 20px;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #8a8a8a; 
+            border-radius: 20px;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #8a8a8a; 
+        }
+    }
     .b__left--ls {
         display: flex;
+        align-items: center;
     }
 }
 .b__siderbar__ls { 
@@ -22,6 +48,31 @@ h3.b__title{
     border-radius: 10px 10px 0 0;
 }
 .b__siderbar__ls {
+    .b__avatar-sm {   
+        flex-basis: 40px;
+         max-width: 40px;
+        margin-right: 10px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        img {
+            max-width: 100%;
+            border-radius: 100%; 
+        }
+    }
+    .b__desc {
+        flex-basis: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+        p {
+            margin-bottom: 0;
+            line-height: normal;
+        } 
+    }
+    small {
+        width: 100%;
+        text-align: right;
+        display: inline-block;
+    }
     ul {
         padding: 15px;
         margin: 0;
@@ -39,6 +90,32 @@ h3.b__title{
 .b__siderbar--right {
     flex-basis: 20%;
     max-width: 20%;
+    .maxheight280 {
+        max-height: 280px;
+        overflow-x: auto;
+        /* width */
+        &::-webkit-scrollbar {
+            width: 5px;
+            border-radius: 20px;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 20px;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #8a8a8a; 
+            border-radius: 20px;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #8a8a8a; 
+        }
+    }
     .b__right--ls {
         ul {
             padding: 0;
@@ -89,6 +166,9 @@ h3.b__title{
                     a {
                         font-size: 14px;
                         color: #000;
+                        &:hover {
+                            text-decoration: none;
+                        }
                     }
                 }
             }
