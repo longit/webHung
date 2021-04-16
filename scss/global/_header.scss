@@ -2,7 +2,10 @@
 .b-header{
   position: relative;  
   background-color: $color-white;
-  padding: 0 60px;
+  padding: 0 30px;
+  .navbar {
+    padding: .5rem 0;
+  }
   .b__avatar--top {
     .b__cart {
       position: relative;
@@ -25,11 +28,26 @@
       }
     }
   }
+  .b__avatar--top {
+    ul {
+      li {
+        a {
+          p { 
+            color: $color-bg2;
+          }
+        }
+        &:hover {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
   .b-header__menu-navbar {
     ul {
       li { 
-        a.nav-link {
-          text-transform: uppercase;
+        a.nav-link { 
           color: #000;
           padding-right: 1rem;
           padding-left: 1rem;
@@ -38,26 +56,30 @@
         &.active,
         &:hover {
           a.nav-link {
-            color: $color-primary;
+            color: $color-primary; 
+            border-bottom: 2px solid $color-primary;
           }
         }
       }
     }
   }
   .b__search {
+    margin: 0 50px;
+    min-width: 250px;
     form {
       display: flex;
       align-items: center;
       position: relative;
       button {
         position: absolute;
-        left: 0;
+        left: 5px;
         border: transparent;
         background-color: transparent;
         color:  #495057;
       }
       input {
-        padding-left: 30px;;
+        padding-left: 30px;
+        border-radius: 30px;
       }
     }
   }
@@ -67,6 +89,7 @@
       margin: 0;
       display: flex; 
       align-items: center;
+      justify-content: flex-end;
       min-width: 200px;
       li {
         list-style: none;
