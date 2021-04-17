@@ -1,7 +1,7 @@
 /*---------- sidebar css ----------*/
 .b__siderbar--left {
-    flex-basis: 300px;
-    max-width: 300px; 
+    flex-basis: 20%;
+    max-width: 20%; 
     ul {
         max-height: 430px;
         overflow-x: auto;
@@ -64,9 +64,25 @@ h3.b__title{
     .b__desc {
         flex-basis: calc(100% - 40px);
         max-width: calc(100% - 40px);
+        position: relative;
+        .b__dots {
+            width: 10px;
+            height: 10px;
+            background: #ce1324;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 100%;
+        }
         p {
             margin-bottom: 0;
             line-height: normal;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            padding-right: 15px;
         } 
     }
     small {
@@ -185,13 +201,19 @@ h3.b__title{
     }
 }
 @media (min-width: $screen-xs-min){
-    
+    .b__siderbar--left,
+    .b__siderbar--right {
+        display: none;
+    }
 }
 @media (min-width: $screen-sm-min){
 
 }
 @media (min-width: $screen-md-min){
-  
+    .b__siderbar--left,
+    .b__siderbar--right {
+        display: block;
+    }
 }
 @media (min-width: $screen-lg-min){
 
