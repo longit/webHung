@@ -58,6 +58,7 @@ h3.b__title{
         img {
             max-width: 100%;
             border-radius: 100%; 
+            border: 2px solid #838383;
         }
     }
     .b__desc {
@@ -138,6 +139,7 @@ h3.b__title{
                 img {
                     max-width: 100%;
                     border-radius: 100%;
+                    border: 2px solid #838383;
                 }
             }
         }
@@ -176,8 +178,14 @@ h3.b__title{
     }
 }
 //sidebar responsive css
+@media (max-width: $screen-xxs-max) {
+    .b__siderbar--left,
+    .b__siderbar--right {
+        display: none;
+    }
+}
 @media (min-width: $screen-xs-min){
-
+    
 }
 @media (min-width: $screen-sm-min){
 

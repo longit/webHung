@@ -26,8 +26,9 @@
             display: flex;
             align-items: center;
             color: #000;
-            img {
-              margin-right: 10px;;
+            .fas, .far, .fab  {
+              margin-right: 10px;
+              font-size: 16px;
             }
             &:hover {
               text-decoration: none;
@@ -80,7 +81,26 @@
 }
  
 @media (max-width: $screen-xxs-max) {
-  
+  .b__footer {
+    padding: 10px 0; 
+    .b__footer--info {
+      padding: 15px;
+      .b__footer--ls {
+        flex-basis: 100%;
+        max-width: 100%;
+        h3 {
+          margin-bottom: 10px;
+        }
+        &.b__footer--40 {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+        form {
+          max-width: 100%;
+        }
+      }
+    }
+  }
 }
 @media (min-width: $screen-xs-min) {
 }

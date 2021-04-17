@@ -4,7 +4,7 @@
   background-color: $color-white;
   padding: 0 30px;
   .navbar {
-    padding: .5rem 0;
+    padding: 0;
   }
   .b__avatar--top {
     .b__cart {
@@ -49,8 +49,8 @@
       li { 
         a.nav-link { 
           color: #000;
-          padding-right: 1rem;
-          padding-left: 1rem;
+          padding: 1.5rem;
+          font-size: 18px; 
           border: 1px solid transparent;
         }
         &.active,
@@ -120,6 +120,9 @@
  
 //header responsive css
 @media (max-width: $screen-xxs-max){  
+  .b-header {
+    margin-bottom: 15px;
+  }
 }
 @media (min-width: $screen-xs-min){
   
