@@ -105,12 +105,15 @@
 @media (min-width: $screen-xs-min) {
 }
 @media (min-width: $screen-sm-min) {
-   
+  .b__footer .b__footer--info .b__footer--ls .b__ssl {
+    padding-left: 40px;
+    img {
+      max-width: 100%;
+    }
+  }
 }
-@media (min-width: $screen-md-min) {
-   
+@media (min-width: $screen-md-min) { 
 }
 @media (min-width: $screen-lg-min) {
-}
-//end footer responsive css
+} 
 /*---------- end footer css ----------*/
